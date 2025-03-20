@@ -1,0 +1,27 @@
+package doubleylinkedlist;
+public class clone 
+{
+	    public static void main(String[] args) {
+
+	    	DoublyLinkedList list1 = new DoublyLinkedList();
+	    	
+	    
+	    
+	    	{
+	        list1.append(10);
+	        list1.append(20);
+	        list1.append(30);
+	        list1.append(40);
+	        
+	        System.out.println("Original Doubly Linked List:");
+	        list1.printList();
+
+	        DoublyLinkedList clonedList = list1.clone();
+
+	        System.out.println("Cloned Doubly Linked List:");
+	        clonedList.printList();
+	    }
+	    }
+}
+	
+
