@@ -1,0 +1,50 @@
+
+public class circularlinked {
+    Node last;
+    
+    class Node {
+        int data;
+        Node next = null;
+
+        Node(int val) {
+            data = val;
+            next = null;
+        }
+    }
+
+    void CircularLinkedList() {
+        last = null;
+    }
+
+    public void insertAtBegin(int val) {
+        Node newNode = new Node(val);
+        
+        if (last == null) {
+            last = newNode;
+            last.next = last; 
+        } else {
+            newNode.next = last.next;
+            last.next = newNode;
+        }
+    }
+
+   
+    public void display() {
+        if (last == null) {
+            return;
+        }
+        
+        Node current = last.next;
+        
+        
+        for (Node temp = current; temp != last; temp = temp.next) {
+            System.out.print(temp.data + " ");
+        }
+      
+        System.out.print(last.data);
+        System.out.println();  
+    }
+
+  
+    }
+

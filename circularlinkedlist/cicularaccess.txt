@@ -1,0 +1,12 @@
+
+public class circularaccess {
+	 public static void main(String[] args) {
+		 circularlinked  list = new circularlinked();
+	        list.insertAtBegin(10);
+	        list.insertAtBegin(20);
+	        list.insertAtBegin(30);
+	        
+	        list.display(); 
+
+}
+}
