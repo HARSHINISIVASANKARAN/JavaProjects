@@ -1,0 +1,1 @@
+                System.out.println(n + " x " + i + " = " + (i * n));
